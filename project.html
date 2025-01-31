@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wings of Career</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header .logo {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        header .tagline {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 71px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .hero button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .hero .join {
+            background-color: #007bff;
+            color: white;
+        }
+        .hero .request {
+            background-color: #f8f9fa;
+            color: #007bff;
+        }
+        .upcoming-exams {
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+        .upcoming-exams h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            position: relative;
+        }
+        .exam {
+            background: white;
+            border-radius: 40px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .exam img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .exam:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
+        .calendar {
+            padding: 30px;
+            background-color: #fff;
+        }
+        .calendar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+        .calendar-grid div {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .calendar-grid .header {
+            font-weight: bold;
+            background-color: #f4f4f4;
+        }
+        .calendar-grid .bubble {
+            background-color: #fa26a0;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .nav-buttons button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .nav-buttons button svg {
+            width: 20px;
+            height: 20px;
+        }
+        .nav-buttons button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 14px;
+        }
+        footer .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        footer .footer-column {
+            flex: 1;
+        }
+        footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">WINGS OF CAREER</div>
+        <div class="tagline">Igniting Dreams, Empowering Futures</div>
+        <nav>
+            <a href="project.html">Home</a>
+            <a href="#calendar">Calendar</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Search</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Elevate Your Career</h1>
+        <p>Empower your future with tailored career guidance</p>
+        
+    </div>
+    <div class="upcoming-exams">
+        <h2>Upcoming Career Exams</h2>
+        <div class="exam-grid">
+            <div class="exam" onclick="window.location.href='keam.html'">
+                <img src="assets/images/b8.jpg" alt="product" class="img-responsive ">
+                <h3><a href="services.html" class="editContent">
+                    KEAM Exam</a></h3>
+                <p>May 2024</p>
+                <p>The KEAM exam is for students seeking admission to engineering colleges in Kerala.</p>
+            </div>
+            <div class="exam" onclick="window.location.href='jee.html'">
+                <img src="assets/images/b1.jpg" >
+                <h3><a href="services1.html" class="editContent">
+                    JEE Exam</a></h3>
+                <p>June 2024</p>
+                <p>JEE Main is a national-level entrance exam for engineering aspirants in India.</p>
+            </div>
+            <div class="exam" onclick="window.location.href='jee.html'">
+                <img src="assets/images/b6.jpg" >
+                <h3><a href="services1.html" class="editContent">
+                    JEE Exam</a></h3>
+                <p>June 2024</p>
+                <p>JEE Main is a national-level entrance exam for engineering aspirants in India.</p>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            
+        </div>
+    </div>
+    <div class="calendar" id="calendar">
+        <h2>Exam Calendar</h2>
+        <div class="calendar-grid">
+            <div class="header">Sun</div>
+            <div class="header">Mon</div>
+            <div class="header">Tue</div>
+            <div class="header">Wed</div>
+            <div class="header">Thu</div>
+            <div class="header">Fri</div>
+            <div class="header">Sat</div>
+            <div></div>
+            <div></div>
+            <div class="bubble">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="bubble">4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div class="bubble">9</div>
+            <div>10</div>
+        </div>
+    </div>
+    <section class="w3l-footer-29-main">
+        <div class="footer-29 py-5 ">
+          <div class="container">
+            <div class="grid-col-4 footer-top-29">
+                <div class="footer-list-29 footer-1">
+                    <h2 class="footer-title-29">About Us</h2>
+    <p class="para">Welcome to Wings of Career, your trusted partner in navigating the journey after Plus Two. Our mission is to empower students with comprehensive guidance on educational opportunities, entrance exams, and career pathways. We strive to provide accurate and insightful information, helping you make informed decisions and take confident steps toward a successful future.</p>
+                    <div class="main-social-footer-29">
+                        <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                        <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                        <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                        <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+                        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                    </div>
+                </div>
+                <div class="footer-list-29 footer-2">
+                    <ul>
+                        <h6 class="footer-title-29">Latest News</h6>
+                        <li><a href="#pages">Programming language</a>
+                        <h5><a href="#pages">by Admin</a></h5></li>
+                        <li><a href="#pages">Graduate Admissions</a><h5><a href="#pages">by Admin</a></h5></li>
+                        <li><a href="#pages">Committed to educating</a><h5><a href="#pages">by Admin</a></h5></li>
+                    </ul>
+                </div>
+                <div class="footer-list-29 footer-3">
+                    <div class="properties">
+                        <h6 class="footer-title-29">Contact Us</h6>
+    
+                    <ul>
+                        <li><p><span class="fa fa-map-marker"></span>Banglore, #32841 block,
+                            #221DRS 75 West Rock,
+                            Maple Building, Karnataka.</p></li>
+                        <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +91 9633620981</a></li>
+                        <li><a href="mailto:estate-mail@support.com" class="mail"><span class="fa fa-envelope-open-o"></span> wingsofcareer@mail.com</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="footer-list-29 footer-4">
+                    <ul>
+                        <h6 class="footer-title-29">Useful Links</h6>
+                        <li><a href="#url">Forums</a></li>
+                        <li><a href="#url">Our Teachers</a></li>
+                        <li><a href="#url">Upcoming Events</a></li>
+                        <li><a href="#url">Popular Courses</a></li>
+                        <li><a href="#url">Verified Course</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" bottom-copies row">
+                
+                    
+                  </ul>
+            </div>
+            </div>
+        </div>
+      </section>
+</body>
+</html>
